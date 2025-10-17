@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae de NOMBRE APORTADO POR GEMINI Y MODIFICADO AL REVISAR</title>
+    <!-- Carga de Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter y colores corporativos -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Fondo sutil */
+        }
+        .section-title {
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e3a8a; /* Azul oscuro profesional */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3b82f6; /* Línea de acento azul */
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 md:p-8 lg:p-12">
+
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden transform transition duration-500 hover:shadow-3xl">
+
+        <!-- HEADER: Información Personal y Foto de Carnet -->
+        <header class="bg-blue-900 text-white p-6 md:p-10 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center space-x-6">
+                <!-- Zona para la Foto de Carnet -->
+                <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+                    <img 
+                        src="https://placehold.co/128x128/3b82f6/FFFFFF/png?text=FOTO+CV" 
+                        alt="Fotografía de carnet de nombre primerApellido" 
+                        class="w-full h-full object-cover border-4 border-white rounded-lg shadow-lg"
+                        onerror="this.onerror=null; this.src='https://placehold.co/128x128/ef4444/FFFFFF/png?text=Error+Foto';"
+                    >
+                </div>
+                <!-- Información Principal -->
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        nombre primerApellido
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl font-light opacity-80 mt-1">
+                        Organismo: organismo
+                    </h2>
+                </div>
+            </div>
+            <!-- Información de Contacto (Mock) -->
+            <div class="mt-4 md:mt-0 text-right space-y-1">
+                <p class="text-sm font-semibold hover:text-blue-200 transition">
+                    <span class="font-normal opacity-75">Email:</span> usuario@dominio.com
+                </p>
+                <p class="text-sm font-semibold hover:text-blue-200 transition">
+                    <span class="font-normal opacity-75">Teléfono:</span> (+34) 123 45 67 89
+                </p>
+                <p class="text-sm font-semibold hover:text-blue-200 transition">
+                    <span class="font-normal opacity-75">Ubicación:</span> Madrid, España
+                </p>
+            </div>
+        </header>
+
+        <!-- CUERPO DEL CV: Secciones principales -->
+        <main class="p-6 md:p-10 lg:p-12 space-y-12">
+
+            <!-- 1. PERFIL PROFESIONAL (Resumen) -->
+            <section>
+                <h3 class="section-title">Perfil Profesional</h3>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Profesional altamente cualificado con más de 10 años de experiencia en la gestión de proyectos de alta complejidad dentro del sector público y la investigación. Experto en optimización de procesos, liderazgo de equipos multidisciplinares y aplicación de metodologías ágiles. Orientado a resultados y con un fuerte compromiso ético.
+                </p>
+            </section>
+
+            <!-- 2. EXPERIENCIA LABORAL -->
+            <section>
+                <h3 class="section-title">Experiencia Laboral</h3>
+                <div class="space-y-6">
+                    <!-- Item de Experiencia 1 -->
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Director de Proyecto Senior</h4>
+                        <p class="text-blue-600 font-medium mt-1">organismo | Enero 2018 - Presente</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1 ml-4">
+                            <li>Liderazgo estratégico de un equipo de 15 ingenieros en el desarrollo de la misión 'X' (impacto presupuestario de 50M €).</li>
+                            <li>Reducción del 20% en los tiempos de entrega mediante la implementación de un nuevo sistema de gestión de recursos.</li>
+                            <li>Representación de la organización en conferencias internacionales.</li>
+                        </ul>
+                    </div>
+                    <!-- Item de Experiencia 2 -->
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Ingeniero de Sistemas</h4>
+                        <p class="text-blue-600 font-medium mt-1">Empresa de Tecnología 'Y' | Junio 2014 - Diciembre 2017</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1 ml-4">
+                            <li>Diseño e implementación de infraestructuras de red de alta disponibilidad (99.99%).</li>
+                            <li>Supervisión de un equipo de soporte técnico de 5 personas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. FORMACIÓN ACADÉMICA -->
+            <section>
+                <h3 class="section-title">Formación Académica</h3>
+                <div class="space-y-4">
+                    <!-- Item de Formación 1 -->
+                    <div class="flex justify-between items-start border-b pb-2">
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Doctorado en Ingeniería Aeroespacial</p>
+                            <p class="text-gray-600">Universidad Politécnica de Madrid (UPM)</p>
+                        </div>
+                        <span class="text-sm font-medium text-blue-600">2012 - 2014</span>
+                    </div>
+                    <!-- Item de Formación 2 -->
+                    <div class="flex justify-between items-start border-b pb-2">
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Máster en Gestión de Proyectos Tecnológicos</p>
+                            <p class="text-gray-600">Escuela de Organización Industrial (EOI)</p>
+                        </div>
+                        <span class="text-sm font-medium text-blue-600">2010 - 2011</span>
+                    </div>
+                    <!-- Item de Formación 3 -->
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Grado en Ingeniería Informática</p>
+                            <p class="text-gray-600">Universidad Complutense de Madrid (UCM)</p>
+                        </div>
+                        <span class="text-sm font-medium text-blue-600">2005 - 2009</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. HABILIDADES Y COMPETENCIAS -->
+            <section>
+                <h3 class="section-title">Habilidades y Competencias</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+                    
+                    <!-- Habilidad Técnica -->
+                    <div class="p-3 bg-gray-50 rounded-lg shadow-inner hover:bg-blue-50 transition duration-300">
+                        <p class="font-bold text-gray-800">Gestión de Proyectos</p>
+                        <p class="text-sm text-gray-500">PMP, Scrum, Lean</p>
+                    </div>
+
+                    <!-- Habilidad Idioma -->
+                    <div class="p-3 bg-gray-50 rounded-lg shadow-inner hover:bg-blue-50 transition duration-300">
+                        <p class="font-bold text-gray-800">Idiomas</p>
+                        <p class="text-sm text-gray-500">Inglés (C2), Francés (B1)</p>
+                    </div>
+
+                    <!-- Habilidad Soft -->
+                    <div class="p-3 bg-gray-50 rounded-lg shadow-inner hover:bg-blue-50 transition duration-300">
+                        <p class="font-bold text-gray-800">Habilidades Blandas</p>
+                        <p class="text-sm text-gray-500">Liderazgo, Resolución de Conflictos</p>
+                    </div>
+
+                    <!-- Habilidad Software -->
+                    <div class="p-3 bg-gray-50 rounded-lg shadow-inner hover:bg-blue-50 transition duration-300">
+                        <p class="font-bold text-gray-800">Software Técnico</p>
+                        <p class="text-sm text-gray-500">MATLAB, Simulink, AutoCAD</p>
+                    </div>
+                    
+                    <!-- Habilidad Base de Datos -->
+                    <div class="p-3 bg-gray-50 rounded-lg shadow-inner hover:bg-blue-50 transition duration-300">
+                        <p class="font-bold text-gray-800">Bases de Datos</p>
+                        <p class="text-sm text-gray-500">SQL, NoSQL (MongoDB)</p>
+                    </div>
+
+                    <!-- Habilidad Cloud -->
+                    <div class="p-3 bg-gray-50 rounded-lg shadow-inner hover:bg-blue-50 transition duration-300">
+                        <p class="font-bold text-gray-800">Plataformas Cloud</p>
+                        <p class="text-sm text-gray-500">AWS, Azure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. REFERENCIAS (Siempre se recomienda poner "Disponibles bajo solicitud") -->
+            <section>
+                <h3 class="section-title">Referencias</h3>
+                <p class="text-gray-700 italic">
+                    Referencias profesionales disponibles bajo solicitud directa del organismo o empresa interesada.
+                </p>
+            </section>
+
+        </main>
+
+        <!-- FOOTER: Información Legal/De Publicación -->
+        <footer class="bg-gray-200 p-4 text-center text-sm text-gray-600">
+            <p>Última actualización: Octubre 2025 | Documento generado y adaptado para publicación web.</p>
+            <p class="mt-1">
+                © nombre primerApellido. Todos los derechos reservados.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
 
